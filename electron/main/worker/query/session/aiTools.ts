@@ -11,7 +11,7 @@ import type { SessionSearchResultItem, SessionMessagesResult } from './types'
  * 支持按关键词和时间范围筛选会话
  *
  * @param sessionId 数据库会话ID
- * @param keywords 关键词列表（可选，OR 逻辑匹配）
+ * @param keywords 关键词列表（可选，或逻辑匹配）
  * @param timeFilter 时间过滤器（可选）
  * @param limit 返回数量限制，默认 20
  * @param previewCount 预览消息数量，默认 5

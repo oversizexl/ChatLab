@@ -18,6 +18,7 @@ const { t } = useI18n()
 const emit = defineEmits<{
   (e: 'openSessionIndex'): void
   (e: 'openIncrementalImport'): void
+  (e: 'openMessageExport'): void
 }>()
 
 const props = defineProps<{
@@ -149,6 +150,13 @@ watch(
           >
             <UIcon name="i-heroicons-clock" class="h-4 w-4 shrink-0" />
             {{ t('analysis.tooltip.sessionIndex') }}
+          </button>
+          <button
+            class="flex items-center gap-2 rounded-xl bg-white/10 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/20 dark:bg-gray-700 dark:hover:bg-gray-600"
+            @click="emit('openMessageExport')"
+          >
+            <UIcon name="i-heroicons-document-arrow-down" class="h-4 w-4 shrink-0" />
+            {{ t('analysis.messageExport.title') }}
           </button>
         </div>
       </template>

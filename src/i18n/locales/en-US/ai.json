@@ -2,8 +2,6 @@
   "tab": {
     "chatExplorer": "Chat Explorer",
     "sqlLab": "SQL Lab",
-    "filterAnalysis": "Filter Analysis",
-    "filterAnalysisDesc": "Filter chat records by person, time, or search content, and export filter results",
     "featureInDev": "{name} is in development",
     "comingSoon": "Coming soon...",
     "followNotice": "Follow me on X for updates"

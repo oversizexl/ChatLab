@@ -105,6 +105,9 @@
     },
     "tools": "常用工具"
   },
+  "messageExport": {
+    "title": "导出聊天记录"
+  },
   "filter": {
     "title": "自定义筛选",
     "conditionMode": "条件筛选",
@@ -113,7 +116,7 @@
     "execute": "开始筛选",
     "export": "导出筛选结果",
     "keywords": "关键词",
-    "keywordsHint": "支持多个关键词，OR 逻辑匹配",
+    "keywordsHint": "支持多个关键词，或逻辑匹配",
     "keywordPlaceholder": "输入关键词，回车添加",
     "timeRange": "时间范围",
     "allTime": "全部",

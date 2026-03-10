@@ -5,7 +5,6 @@ import { useI18n } from 'vue-i18n'
 import { SubTabs } from '@/components/UI'
 import ChatExplorer from './AIChat/ChatExplorer.vue'
 import SQLLabTab from './SQLLabTab.vue'
-import FilterTab from './Filter/FilterTab.vue'
 
 const { t, locale } = useI18n()
 
@@ -42,12 +41,6 @@ const groupOnlyTabs = ['mbti', 'cyber-friend', 'campus']
 // 所有子 Tab 配置
 const allSubTabs = computed(() => [
   { id: 'chat-explorer', label: t('ai.tab.chatExplorer'), icon: 'i-heroicons-chat-bubble-left-ellipsis' },
-  {
-    id: 'manual',
-    label: t('ai.tab.filterAnalysis'),
-    desc: t('ai.tab.filterAnalysisDesc'),
-    icon: 'i-heroicons-adjustments-horizontal',
-  },
   { id: 'sql-lab', label: t('ai.tab.sqlLab'), icon: 'i-heroicons-command-line' },
 ])
 
@@ -95,8 +88,6 @@ defineExpose({
           :time-filter="timeFilter"
           :chat-type="chatType"
         />
-        <!-- 自定义筛选 -->
-        <FilterTab v-else-if="activeSubTab === 'manual'" class="h-full" />
         <!-- SQL 实验室 -->
         <SQLLabTab v-else-if="activeSubTab === 'sql-lab'" class="h-full" :session-id="props.sessionId" />
 
