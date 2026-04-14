@@ -1,5 +1,41 @@
 [
   {
+    "version": "0.17.2",
+    "date": "2026-04-15",
+    "summary": "This update adds cross-platform data merge and member message merge, strengthens dictionary and update security checks, improves the dark theme experience and logging, and fixes several bugs.",
+    "changes": [
+      {
+        "type": "feat",
+        "items": [
+          "Support merging member messages in member management.",
+          "Support merging chat data across platforms.",
+          "Add sorting support to selected table columns in data management.",
+          "Move the topic analysis entry point to Insights.",
+          "Add original file path recording for AI log files.",
+          "Improve dark theme colors for better visual comfort."
+        ]
+      },
+      {
+        "type": "fix",
+        "items": [
+          "Fix dictionary refresh and merge ID collision issues.",
+          "Add runtime User-Agent headers for OpenAI-compatible requests.",
+          "Fix transparent background issues when exporting dark-theme screenshots.",
+          "Add SHA256 integrity verification for dictionary downloads.",
+          "Tighten remote config fetching and strengthen update installation confirmation."
+        ]
+      },
+      {
+        "type": "chore",
+        "items": ["Add deb package build support for ARM Linux.", "Optimize the changelog sync flow."]
+      },
+      {
+        "type": "docs",
+        "items": ["Add Traditional Chinese documentation."]
+      }
+    ]
+  },
+  {
     "version": "0.17.1",
     "date": "2026-04-13",
     "summary": "Refactored the Topics module with a new topic card view, improved word cloud keyword filtering and query caching, added remote tokenizer dictionary downloads with Traditional Chinese support, and improved WhatsApp detection.",
